@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARVIND FOUNDATION - Timetable</title>
+
+    <!-- Appealing Rounded Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Fredoka', sans-serif;
+            background: linear-gradient(to bottom right, #d5e8ff, #ffe5cc);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding: 0 20px;
+        }
+
+        .logo {
+            width: 320px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin: 10px 0;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #3f3f3f;
+            margin-bottom: 60px;
+        }
+
+        .grade-buttons {
+            margin-top: auto;
+            margin-bottom: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .grade-buttons a {
+            text-decoration: none;
+            background-color: #ff944d;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 18px 45px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .grade-buttons a:hover {
+            background-color: #e67a33;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .grade-buttons a {
+                width: 80%;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Arvind Foundation Logo" class="logo">
+
+    <!-- Main Headings -->
+    <h1>ARVIND FOUNDATION</h1>
+    <h2>TIMETABLE</h2>
+
+    <!-- Buttons Placed Lower -->
+    <div class="grade-buttons">
+        <a href="/pre">PRE</a>
+        <a href="/grade3">GRADE 3</a>
+        <a href="/grade8">GRADE 8</a>
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARVIND FOUNDATION - Timetable</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #cde8ff, #ffe0cc); /* Soft blue to peach */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .logo {
+            width: 320px; /* Larger logo */
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2f4f4f;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .grade-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .grade-buttons a {
+            text-decoration: none;
+            background-color: #ff8c42; /* Nice bright orange */
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 18px 40px;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .grade-buttons a:hover {
+            background-color: #e6762c;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .grade-buttons a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Arvind Foundation Logo" class="logo">
+
+    <h1>ARVIND FOUNDATION</h1>
+    <h2>TIMETABLE</h2>
+
+    <div class="grade-buttons">
+        <a href="/pre">PRE</a>
+        <a href="/grade3">GRADE 3</a>
+        <a href="/grade8">GRADE 8</a>
+    </div>
+
+</body>
+</html>
+

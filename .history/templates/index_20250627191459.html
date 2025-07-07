@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARVIND FOUNDATION - Timetable</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 340px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #2d2d2d;
+            margin: 0 0 20px 0;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #3f3f3f;
+            margin: 0 0 40px 0;
+        }
+
+        .grade-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .grade-buttons a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding: 16px 38px;
+            background-color: #87cefa; /* Light blue fill */
+            border: none;
+            border-radius: 14px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .grade-buttons a:hover {
+            background-color: #5aaeea; /* Slightly darker on hover */
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 44px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .grade-buttons a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Arvind Foundation Logo" class="logo">
+
+    <!-- Heading -->
+    <h1>ARVIND FOUNDATION</h1>
+    <h2>TIMETABLE</h2>
+
+    <!-- Grade Buttons -->
+    <div class="grade-buttons">
+        <a href="/pre">PRE</a>
+        <a href="/grade3">GRADE 3</a>
+        <a href="/grade8">GRADE 8</a>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+

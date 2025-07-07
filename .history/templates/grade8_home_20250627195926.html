@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ARVIND FOUNDATION - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(to right, #c8e3f1, #fbe4ff, #e3eafc);
+            color: #2d2d2d;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ffffffcc;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 52px;
+            margin: 0;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #4a4a4a;
+            margin-top: 10px;
+        }
+
+        .quick-access {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .grade-card {
+            background-color: #d7efff;
+            color: black;
+            text-decoration: none;
+            padding: 30px 50px;
+            border-radius: 12px;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .grade-card:hover {
+            background-color: #b7dbff;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ARVIND FOUNDATION</h1>
+        <h2>Timetable Dashboard</h2>
+    </header>
+
+    <div class="quick-access">
+        <a class="grade-card" href="/pre">PRE</a>
+        <a class="grade-card" href="/grade3">GRADE 3</a>
+        <a class="grade-card" href="/grade8">GRADE 8</a>
+    </div>
+
+    <footer>
+        Staff Dashboard - Please select a grade to view its daily schedule.
+    </footer>
+
+</body>
+</html>
+
+

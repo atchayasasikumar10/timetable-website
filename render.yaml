@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: timetable-web
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py
+    branch: main

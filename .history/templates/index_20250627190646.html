@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARVIND FOUNDATION - Timetable</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(to bottom right, #d5e8ff, #ffe5cc);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        .logo {
+            width: 340px;
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            color: #2d2d2d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #3f3f3f;
+            margin-bottom: 60px;
+        }
+
+        .grade-buttons {
+            margin-top: auto;
+            margin-bottom: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .grade-buttons a {
+            text-decoration: none;
+            color: #0059b3;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 16px 38px;
+            border: 3px solid #0059b3;
+            border-radius: 14px;
+            transition: background-color 0.2s, transform 0.2s, color 0.2s;
+        }
+
+        .grade-buttons a:hover {
+            background-color: #0059b3;
+            color: white;
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 44px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .grade-buttons a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Arvind Foundation Logo" class="logo">
+
+    <!-- Headings -->
+    <h1>ARVIND FOUNDATION</h1>
+    <h2>TIMETABLE</h2>
+
+    <!-- Grade Links -->
+    <div class="grade-buttons">
+        <a href="/pre">PRE</a>
+        <a href="/grade3">GRADE 3</a>
+        <a href="/grade8">GRADE 8</a>
+    </div>
+
+</body>
+</html>
+
+
+
